@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <input placeholder="请输入药名" bindinput="input" />
+  <button type="primary"  bindtap="btnClick"> 查询 </button>
+
+
+  <scroll-view scroll-y="true" style="height: 200px;" >
+      <view wx:for="{{expressInfo.results}}">
+          {{item.NAME}}
+     </view>
+    <view wx:for="{{expressInfo.results}}">
+      {{item.CLASSES}}
+    </view>
+    <view wx:for="{{expressInfo.results}}">
+            {{item.EFFECT}}
+     </view>
+     <view wx:for="{{expressInfo.results}}">
+             {{item.FLAVOR_MERIDIAN}} 
+     </view>
+     <view wx:for="{{expressInfo.results}}">
+            {{item.SUBCLASS}}
+     </view>
+   </scroll-view>
+
+</view>

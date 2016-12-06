@@ -1,0 +1,23 @@
+<view class="section">
+  <view class="section__title">选择归经</view>
+  <picker modal="section" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+  <view class="container">
+  <scroll-view scroll-y="true" style="height: 380px;" >
+  <text>
+      <view wx:for="{{expressInF.results}}">
+         {{item.NAME}}
+          {{item.CLASSES}}
+           {{item.SUBCLASS}} 
+           {{item.FLAVOR_MERIDIAN}} 
+            {{item.EFFECT}}
+     </view>
+     </text>
+     </scroll-view>
+
+</view>
+
+</view>

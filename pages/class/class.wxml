@@ -1,0 +1,30 @@
+<view class="section">
+  <view class="section__title">选择类别</view>
+  <picker  bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+  <view class="container">
+  <scroll-view scroll-y="true" style="height: 380px;" >
+ 
+      <swiper wx:for="{{expressIn.results}}"> 
+      
+       <text>
+         【药名】 {{item.NAME}}
+          {{item.CLASSES}}
+          {{item.SUBCLASS}} 
+          {{item.FLAVOR_MERIDIAN}} 
+          {{item.EFFECT}}
+        </text>
+        
+       
+    </swiper>
+     
+   </scroll-view>
+   </view>
+  
+
+
+
+</view>

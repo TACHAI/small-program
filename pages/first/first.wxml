@@ -1,0 +1,11 @@
+<view class="container">
+ 
+ <button type="primary" size="{{primarySize}}"  bindtap="name" > 药名查询 </button>
+ <button type="primary" size="{{primarySize}}" bindtap="CLASS" > 类别查询 </button>
+ <button type="primary" size="{{primarySize}}"  bindtap="XING" > 性味查询 </button>
+ <button type="primary" size="{{primarySize}}"  bindtap="EFFECT" > 性功效查询 </button>
+
+
+
+
+</view>

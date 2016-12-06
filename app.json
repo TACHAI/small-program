@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/first/first",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/class/class",
+    "pages/FLAVOR_MERIDIAN/FLAVOR_MERIDIAN"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "民族药查询",
+    "navigationBarTextStyle":"black"
+  }
+}
